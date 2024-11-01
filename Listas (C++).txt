@@ -1,0 +1,21 @@
+En C++, la biblioteca estándar (<list>) proporciona una lista doblemente enlazada, que es una estructura de datos más robusta y eficiente que la lista simple implementada manualmente en el ejemplo anterior. La clase std::list de la biblioteca estándar permite operaciones como inserción, eliminación y recorrido de elementos de manera eficiente, ya que cada nodo tiene punteros tanto al nodo anterior como al siguiente.
+
+A continuación, te explico cómo funciona una lista doblemente enlazada y cómo podemos usar std::list para realizar las mismas operaciones de una lista simple.
+
+Funcionamiento básico de std::list
+std::list es una lista doblemente enlazada en la que cada nodo tiene:
+
+Dato: el valor que queremos almacenar.
+Puntero al siguiente nodo.
+Puntero al nodo anterior.
+Las operaciones básicas en std::list son similares a las de una lista simple, pero la lista doblemente enlazada permite recorrer la lista en ambos sentidos (hacia adelante y hacia atrás). Esto se logra de manera eficiente gracias a los punteros dobles en cada nodo.
+
+Operaciones comunes con std::list
+Insertar elementos:
+Al inicio (push_front).
+Al final (push_back).
+Eliminar elementos:
+En una posición específica con un iterador.
+Con un valor específico (remove).
+Recorrer la lista: Mediante un bucle o iteradores.
+

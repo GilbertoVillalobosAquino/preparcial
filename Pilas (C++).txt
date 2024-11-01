@@ -1,0 +1,30 @@
+Las pilas son una estructura de datos dinámica en la que los elementos se organizan y acceden siguiendo el principio LIFO (Last In, First Out), es decir, el último elemento en entrar es el primero en salir. Imagina una pila de libros: el último libro que coloques en la cima será el primero que podrás sacar.
+
+En C++, las pilas se pueden implementar manualmente usando punteros o estructuras de datos personalizadas, pero la biblioteca estándar <stack> de C++ permite gestionar pilas de una forma más sencilla y eficiente.
+
+Funcionamiento de una Pila
+Las pilas tienen tres operaciones básicas:
+
+Push: Añadir un elemento en la cima de la pila.
+Pop: Eliminar el elemento en la cima de la pila (el último que se ha añadido).
+Top: Obtener el valor del elemento en la cima de la pila sin eliminarlo.
+Además, existen algunas operaciones auxiliares:
+
+empty: Verifica si la pila está vacía.
+size: Devuelve el número de elementos en la pila.
+
+Explicación del código (ejemplo_pila_quemado)
+Declarar la pila: stack<int> pila; crea una pila de enteros.
+Apilar elementos (push): Se añaden tres elementos a la pila: 10, 20, y 30. Cada nuevo elemento se coloca en la cima de la pila.
+Acceder al elemento en la cima (top): top devuelve el valor en la cima de la pila sin eliminarlo. Aquí, devuelve 30.
+Desapilar elementos (pop): Con el bucle while, se eliminan los elementos desde la cima hasta que la pila esté vacía.{
+
+Explicación de la salida
+La primera línea muestra el valor en la cima de la pila (30).
+Luego, al desapilar los elementos, el programa muestra y elimina cada elemento de la cima: 30, 20, y 10.
+Ventajas de std::stack
+Usar la biblioteca std::stack en C++ simplifica el trabajo con pilas:
+
+Simplicidad: std::stack se encarga de la gestión de los elementos y el manejo de la memoria.
+Métodos útiles: Proporciona métodos como push, pop, top, empty, y size.
+Eficiencia: std::stack está optimizado para operaciones de apilado y desapilado.

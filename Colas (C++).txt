@@ -1,0 +1,36 @@
+Las colas son una estructura de datos dinámica en la que los elementos se organizan y acceden siguiendo el principio FIFO (First In, First Out), es decir, el primero que entra es el primero en salir. Esto es como una fila de personas, donde quien está primero en la fila es el primero en ser atendido.
+
+En C++, las colas se pueden implementar manualmente usando punteros o estructuras de datos personalizadas, pero también podemos usar la biblioteca estándar <queue> de C++, que simplifica su uso.
+
+Funcionamiento de una Cola
+Una cola tiene dos operaciones básicas:
+
+Encolar (push): Añadir un elemento al final de la cola.
+Desencolar (pop): Eliminar el elemento del frente de la cola (el que ha estado en la cola por más tiempo).
+Además, existen algunas operaciones auxiliares comunes:
+
+front: Devuelve el elemento que está al frente de la cola sin eliminarlo.
+back: Devuelve el último elemento de la cola (el más reciente añadido).
+empty: Verifica si la cola está vacía.
+size: Devuelve el número de elementos en la cola.
+
+Explicación del código
+Declarar la cola: queue<int> cola; crea una cola de enteros.
+Encolar elementos (push): Se añaden tres elementos a la cola: 10, 20, y 30. Estos elementos se colocan al final de la cola en el orden en que se agregan.
+Acceder a los elementos:
+front devuelve el primer elemento (10).
+back devuelve el último elemento (30).
+Desencolar elementos (pop): Con el bucle while, se eliminan y muestran los elementos desde el frente hasta que la cola queda vacía.
+
+Explicación de la salida (colas_ejemplo_quemado)
+La primera línea muestra el frente de la cola (10).
+La segunda línea muestra el final de la cola (30).
+Luego, al desencolar los elementos, el programa muestra cada uno desde el frente en el orden en que fueron añadidos: 10, 20, y 30.
+Ventajas de std::queue
+Usar la biblioteca std::queue tiene varias ventajas:
+
+Simplicidad: No es necesario implementar manualmente los nodos y punteros.
+Eficiencia: std::queue optimiza el almacenamiento y acceso de elementos en la cola.
+Métodos útiles: Proporciona métodos predefinidos como front, back, push, pop, empty y size.
+
+
