@@ -1,0 +1,10 @@
+Búsqueda Binaria con std::binary_search
+La biblioteca estándar de C++ proporciona el algoritmo std::binary_search, que facilita la implementación de la búsqueda binaria. Esta función devuelve un valor booleano indicando si el elemento está o no en el arreglo.
+
+Explicación del Código
+sort ordena el arreglo.
+binary_search recibe el rango [arreglo.begin(), arreglo.end()] y el valor buscado, y devuelve true si encuentra el elemento o false si no está.
+Consideraciones al Elegir un Algoritmo de Búsqueda
+Búsqueda lineal: Es adecuada para datos no ordenados o para estructuras de datos pequeñas, ya que es fácil de implementar.
+Búsqueda binaria: Es más eficiente para datos grandes, pero requiere que el arreglo esté ordenado.
+Estos algoritmos de búsqueda te ayudan a encontrar elementos rápidamente en estructuras de datos en C++. La elección de uno u otro depende de las características de los datos y del tipo de estructura en que se encuentren.

@@ -1,0 +1,23 @@
+2. Búsqueda Binaria
+La búsqueda binaria es un algoritmo de búsqueda eficiente para listas ordenadas. Funciona dividiendo repetidamente el rango de búsqueda a la mitad hasta encontrar el elemento buscado o hasta que el rango sea nulo.
+
+Pasos de la Búsqueda Binaria
+Asegúrate de que el arreglo esté ordenado.
+Define dos punteros: uno al inicio y otro al final del rango.
+Mientras el inicio sea menor o igual al final:
+Calcula el punto medio del rango.
+Si el elemento en el punto medio es el buscado, termina la búsqueda.
+Si el elemento en el punto medio es mayor que el buscado, ajusta el final al punto medio - 1.
+Si el elemento en el punto medio es menor que el buscado, ajusta el inicio al punto medio + 1.
+Si el rango es nulo y no hemos encontrado el elemento, el valor no está en el arreglo.
+Complejidad
+La complejidad de la búsqueda binaria es O(log n), lo cual la hace mucho más rápida que la búsqueda lineal para arreglos grandes, siempre y cuando el arreglo esté ordenado.
+
+Explicación del Código
+La función busquedaBinaria recibe un vector de enteros arreglo (que ya está ordenado) y el valor que queremos buscar.
+Define inicio y fin como los límites del rango de búsqueda.
+Mientras el rango no esté vacío:
+Calcula el punto medio y compara el valor en esta posición.
+Si coincide con el valor buscado, devuelve su posición.
+Si no coincide, ajusta el rango de búsqueda hacia la mitad que contiene el valor buscado.
+Si no encuentra el valor, devuelve -1.

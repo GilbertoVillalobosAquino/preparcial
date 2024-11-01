@@ -1,0 +1,16 @@
+1. Búsqueda Lineal
+La búsqueda lineal es un algoritmo simple y directo, adecuado para buscar un elemento en estructuras de datos no ordenadas. Funciona revisando cada elemento de la estructura de datos uno por uno hasta encontrar el elemento buscado o llegar al final de la estructura.
+
+Pasos de la Búsqueda Lineal
+Comenzar desde el primer elemento del arreglo o lista.
+Comparar cada elemento con el valor que estamos buscando.
+Si encontramos el elemento, el proceso termina, y devolvemos su posición.
+Si llegamos al final de la estructura de datos sin encontrar el elemento, entonces este no está presente.
+Complejidad
+La complejidad de la búsqueda lineal es O(n), donde n es el número de elementos en la estructura de datos. Es adecuada para listas pequeñas o para datos no ordenados, pero no es eficiente para listas grandes.
+
+Explicación del Código
+La función busquedaLineal recibe un vector de enteros arreglo y el valor que queremos buscar.
+Recorre el arreglo y compara cada elemento con el valor.
+Si encuentra el valor, devuelve la posición.
+Si no encuentra el valor en todo el arreglo, devuelve -1.
